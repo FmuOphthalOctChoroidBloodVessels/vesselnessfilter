@@ -13,4 +13,4 @@ _sample_doc/*
 _storage/*
 
 # experiments folder
-_experiments/
+_experiments/results/*
