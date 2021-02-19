@@ -184,8 +184,15 @@ Hessian行列にもとづく血管走行パタンの抽出（cf. [Dirk-Jan Kroon
 マスク処理に用いるファイルを作成します．
 - 入力：oct_segmentの出力ファイル(mat形式）
 - 出力：NIfTI形式．ファイル名の先頭に"mask_"がつく．すべて同一のディレクトリに保存されている必要がある．
-#### NIfTIファイルの表示
-Util->Display->NIfTI
+#### ボリュームデータの表示
+NIfTI, TIF, IMGデータの三次元直交ビューで表示します
+- Disp Image -> NIfTI: NIfTIファイルをビューワーで開きます
+- Disp Image -> TIF: TIFファイルをビューワーで開きます
+- Disp Image -> IMG: IMGファイル（ディスクイメージ）をビューワーで開きます
+#### ボリュームデータの情報表示
+NIfTI, TIFデータの情報を表示します
+- Disp Image Info -> NIfTIファイルの情報を表示します
+- Disp Image Info -> TIFファイルの情報を表示します
 
 # このプロジェクトに関するヘルプをどこで得るか
 * バグ報告・ご要望などは[issue](https://github.com/FmuOphthalOctChoroidBloodVessels/vesselnessfilter/issues)にて受け付けております．
