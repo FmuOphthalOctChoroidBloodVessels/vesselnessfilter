@@ -172,7 +172,8 @@ Hessian行列にもとづく血管走行パタンの抽出（[Dirk-Jan Kroon, 20
 Util->Display->NIfTI
 
 # このプロジェクトに関するヘルプをどこで得るか
-ご質問・ご要望・バグ報告などは[issue](https://github.com/FmuOphthalOctChoroidBloodVessels/project_ume/issues)にて受け付けております．
+* バグ報告・ご要望などは[issue](https://github.com/FmuOphthalOctChoroidBloodVessels/vesselnessfilter/issues)にて受け付けております．
+* ご質問はGoogle Groupにて受け付けております．Google Groupへの参加をご希望の方は管理者（mokamoto@fmu.ac.jp）までご連絡ください．
 
 # このプロジェクトのメンテナンス者とコントリビューター
 このプロジェクトのソースコードは以下の者が作成しました．
