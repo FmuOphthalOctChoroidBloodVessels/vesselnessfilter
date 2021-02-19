@@ -65,7 +65,11 @@ OCT画像を取り込み，眼底の血管走行パタンを抽出するため�
 
 #### Utilメニュー
 - Create Mask: マスク処理のためのファイルを作成します
-- Display->NIfTI: NIfTIファイルをビューワーで開きます
+- Disp Image -> NIfTI: NIfTIファイルをビューワーで開きます
+- Disp Image -> TIF: TIFファイルをビューワーで開きます
+- Disp Image -> IMG: IMGファイル（ディスクイメージ）をビューワーで開きます
+- Disp Image Info -> NIfTIファイルの情報を表示します
+- Disp Image Info -> TIFファイルの情報を表示します
 
 ### アプリの使い方
 IMG importを例にアプリの使い方を紹介します．デフォルト値を変更する必要がない場合は，適宜飛ばして進んでください．
