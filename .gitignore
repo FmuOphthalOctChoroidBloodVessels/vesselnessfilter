@@ -14,3 +14,6 @@ _storage/*
 
 # experiments folder
 _experiments/results/*
+
+# log
+src/vesselnesfilter/PackagingLog.html
