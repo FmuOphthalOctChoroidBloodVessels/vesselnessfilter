@@ -30,6 +30,7 @@ OCT画像から脈絡膜層の血管走行パタンを抽出するために，�
 ### その他
 * デフォルトのインストールフォルダは"C:\Program Files\Fukushima Medical University"です
 * アンインストールは各OSの手順に従ってください．（Windows10の場合は「プログラムの追加と削除」から行えます）
+* アップデートは「インストール手順」と同様の手順で行うことができます（異なるバージョンを共存させる場合は，インストール先を変てください）
 
 ## アプリについて
 ### 概要
@@ -68,8 +69,10 @@ OCT画像を取り込み，眼底の血管走行パタンを抽出するため�
 - Disp Image -> NIfTI: NIfTIファイルをビューワーで開きます
 - Disp Image -> TIF: TIFファイルをビューワーで開きます
 - Disp Image -> IMG: IMGファイル（ディスクイメージ）をビューワーで開きます
-- Disp Image Info -> NIfTIファイルの情報を表示します
-- Disp Image Info -> TIFファイルの情報を表示します
+- Disp Image Info -> NIfTI: NIfTIファイルの情報を表示します
+- Disp Image Info -> TIF: TIFファイルの情報を表示します
+- Dir Operations -> Show Current Directory: 現在の作業ディレクトリを表示します
+- Dir Operations -> Change Working Directory: 作業ディレクトリを変更します（作業ディレクトリをプロジェクトディレクトリに変更しておくと便利です）
 
 ### アプリの使い方
 IMG importを例にアプリの使い方を紹介します．デフォルト値を変更する必要がない場合は，適宜飛ばして進んでください．
