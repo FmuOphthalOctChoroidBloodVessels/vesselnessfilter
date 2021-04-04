@@ -16,6 +16,6 @@ _storage/*
 _experiments/results/*
 
 # log
-src/vesselnesfilter/PackagingLog.html
+PackagingLog.html
 
 src/20210404/*
