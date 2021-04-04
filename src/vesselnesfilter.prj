@@ -16,10 +16,10 @@
     <param.logo />
     <param.install.notes />
     <param.target.install.notes />
-    <param.intermediate>${PROJECT_ROOT}\vesselnesfilter\ver1.1\for_testing</param.intermediate>
-    <param.files.only>${PROJECT_ROOT}\vesselnesfilter\ver1.1\for_redistribution_files_only</param.files.only>
-    <param.output>${PROJECT_ROOT}\vesselnesfilter\ver1.1\for_redistribution</param.output>
-    <param.logdir>${PROJECT_ROOT}\vesselnesfilter\ver1.1</param.logdir>
+    <param.intermediate>${PROJECT_ROOT}\vesselnesfilter\for_testing</param.intermediate>
+    <param.files.only>${PROJECT_ROOT}\vesselnesfilter\for_redistribution_files_only</param.files.only>
+    <param.output>${PROJECT_ROOT}\vesselnesfilter\for_redistribution</param.output>
+    <param.logdir>${PROJECT_ROOT}\vesselnesfilter</param.logdir>
     <param.enable.clean.build>false</param.enable.clean.build>
     <param.user.defined.mcr.options />
     <param.target.type>subtarget.standalone</param.target.type>
@@ -53,6 +53,10 @@
       <param.logo />
       <param.install.notes />
       <param.target.install.notes />
+      <param.intermediate />
+      <param.files.only />
+      <param.output />
+      <param.logdir />
       <param.enable.clean.build />
       <param.user.defined.mcr.options />
       <param.target.type />
@@ -82,9 +86,9 @@
       <file>C:\Users\mokam\AppData\Roaming\MathWorks\MATLAB Add-Ons\Collections\Hessian based Frangi Vesselness filter\imgaussian.m</file>
     </fileset.depfun>
     <build-deliverables>
-      <file location="${PROJECT_ROOT}\vesselnesfilter\ver1.1\for_testing" name="splash.png" optional="false">C:\Users\mokam\myProjects\project_oct\vesselnessfilter\src\vesselnesfilter\ver1.1\for_testing\splash.png</file>
-      <file location="${PROJECT_ROOT}\vesselnesfilter\ver1.1\for_testing" name="vesselnesfilter.exe" optional="false">C:\Users\mokam\myProjects\project_oct\vesselnessfilter\src\vesselnesfilter\ver1.1\for_testing\vesselnesfilter.exe</file>
-      <file location="${PROJECT_ROOT}\vesselnesfilter\ver1.1\for_testing" name="readme.txt" optional="true">C:\Users\mokam\myProjects\project_oct\vesselnessfilter\src\vesselnesfilter\ver1.1\for_testing\readme.txt</file>
+      <file location="${PROJECT_ROOT}\vesselnesfilter\for_testing" name="vesselnesfilter.exe" optional="false">C:\Users\mokam\myProjects\project_oct\vesselnessfilter\src\vesselnesfilter\for_testing\vesselnesfilter.exe</file>
+      <file location="${PROJECT_ROOT}\vesselnesfilter\for_testing" name="readme.txt" optional="true">C:\Users\mokam\myProjects\project_oct\vesselnessfilter\src\vesselnesfilter\for_testing\readme.txt</file>
+      <file location="${PROJECT_ROOT}\vesselnesfilter\for_testing" name="splash.png" optional="false">C:\Users\mokam\myProjects\project_oct\vesselnessfilter\src\vesselnesfilter\for_testing\splash.png</file>
     </build-deliverables>
     <workflow />
     <matlab>
