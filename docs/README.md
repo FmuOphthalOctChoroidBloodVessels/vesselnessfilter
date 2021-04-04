@@ -21,6 +21,9 @@ OCT画像から脈絡膜層の血管走行パタンを抽出するために，�
 
 ## インストール方法
 実行ファイル形式のインストーラ（MyAppInstaller_web.exe）を実行します．
+### インストーラーの入手方法
+1. 最新バージョンは[こちら](https://github.com/FmuOphthalOctChoroidBloodVessels/vesselnessfilter/tree/main/src/vesselnesfilter)で入手できます
+2. 最新バージョンをふくむすべてのリリースは[こちら](https://github.com/FmuOphthalOctChoroidBloodVessels/vesselnessfilter/releases/)で入手できます
 ### インストール手順
 1. インストーラを実行
 2. 最初のウィンドウが現れたら「次へ」ボタンをクリック
