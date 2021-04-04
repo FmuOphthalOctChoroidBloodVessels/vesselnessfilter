@@ -182,6 +182,16 @@ Hessian行列にもとづく血管走行パタンの抽出（cf. [Dirk-Jan Kroon
 - Output size [H*W*]: 変更を希望するボリュームサイズ
 - Prefix: 出力データを保存する際にファイル名に付加する接頭辞
 
+### Editツールの説明
+#### Module List内の操作
+モジュールリスト内に表示されたモジュールに対する操作を行います（Module List内で右クリックをすると同様の操作を行えます）
+- Module -> Move Up Selected Module: ハイライトされたモジュールをリストの一つ上に移動します
+- Module -> Move Down Selected Module: ハイライトされたモジュールをリストの一つ下に移動します
+- Module -> Remove the Selected Module: ハイライトされたモジュールを削除します
+- Module -> Remove All Modules: リスト内のすべてのモジュールを削除します
+#### Specify the Selected Item
+Specifyボタンと同じ動作をします
+
 ### Unil（ユーティリティツール）の説明
 #### Create Mask
 マスク処理に用いるファイルを作成します．
@@ -196,10 +206,13 @@ NIfTI, TIF, IMGデータの三次元直交ビューで表示します
 NIfTI, TIFデータの情報を表示します
 - Disp Image Info -> NIfTIファイルの情報を表示します
 - Disp Image Info -> TIFファイルの情報を表示します
+#### 作業法ディレクトリの操作
+- Dir Operations -> Show Current Directory: 現在の作業ディレクトリをINFO欄に表示します
+- Dir Operations -> Change Working Directory: 作業ディレクトリを変更します
 
 # このプロジェクトに関するヘルプをどこで得るか
 * バグ報告・ご要望などは[issue](https://github.com/FmuOphthalOctChoroidBloodVessels/vesselnessfilter/issues)にて受け付けております．
-* ご質問はGoogle Groupにて受け付けております．Google Groupへの参加をご希望の方は管理者（mokamoto@fmu.ac.jp）までご連絡ください．
+* ご質問などは[GitHub Discussions](https://github.com/FmuOphthalOctChoroidBloodVessels/vesselnessfilter/discussions)にて受け付けております．GitHub Discussionについては[ドキュメンテーション](https://docs.github.com/ja/discussions/collaborating-with-your-community-using-discussions/participating-in-a-discussion)をご覧ください．
 
 # このプロジェクトのメンテナンス者とコントリビューター
 このプロジェクトのソースコードは以下の者が作成しました．
