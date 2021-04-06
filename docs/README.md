@@ -217,6 +217,11 @@ NIfTI, TIFデータの情報を表示します
 * バグ報告・ご要望などは[issue](https://github.com/FmuOphthalOctChoroidBloodVessels/vesselnessfilter/issues)にて受け付けております．
 * ご質問などは[GitHub Discussions](https://github.com/FmuOphthalOctChoroidBloodVessels/vesselnessfilter/discussions)にて受け付けております．GitHub Discussionについては[ドキュメンテーション](https://docs.github.com/ja/discussions/collaborating-with-your-community-using-discussions/participating-in-a-discussion)をご覧ください．
 
+# 引用
+このソフトウェアを使った研究を学術文献として発表する場合は以下の文献を引用していただけると大変うれしいです
+- Sekiryu, Tetsuju, Yukinori Sugano, Akira Ojima, Takafumi Mori, Minoru Furuta, Masahiro Okamoto, and Satoshi Eifuku. 2019. “Hybrid Three-Dimensional Visualization of Choroidal Vasculature Imaged by Swept-Source Optical Coherence Tomography.” Translational Vision Science & Technology 8 (5): 31.
+- Tsuji, Shingo, Tetsuju Sekiryu, Yukinori Sugano, Akira Ojima, Akihito Kasai, Masahiro Okamoto, and Satoshi Eifuku. 2020. “Semantic Segmentation of the Choroid in Swept Source Optical Coherence Tomography Images for Volumetrics.” Scientific Reports 10 (1): 1088.
+
 # このプロジェクトのメンテナンス者とコントリビューター
 このプロジェクトのソースコードは以下の者が作成しました．
 - 岡本正博（mokamoto@fmu.ac.jp）：作成，保守
