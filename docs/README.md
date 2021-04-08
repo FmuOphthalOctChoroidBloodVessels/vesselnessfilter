@@ -1,15 +1,15 @@
 # このプロジェクトが行うこと
 OCT画像から脈絡膜層の血管走行パタンを抽出するために，以下の機能を提供します．
-- データ形式の変換：img形式またはtiff形式を読み込み，NIfTI形式に変換
-- 減衰補正（cf. [Zhou et al., 2018](https://pubmed.ncbi.nlm.nih.gov/31065413/)）
-- ボリュームデータの二値化（cf. [imbinarize](https://jp.mathworks.com/help/images/ref/imbinarize.html)）
-- ２つのボリュームデータの差分の算出（cf. [imsubtract](https://jp.mathworks.com/help/images/ref/imsubtract.html)）
-- イメージの補数．白黒反転（cf. [imcomplement](https://jp.mathworks.com/help/images/ref/imcomplement.html)）
-- Hessian行列にもとづく血管走行パタンの抽出（cf. [Dirk-Jan Kroon, 2021](https://jp.mathworks.com/matlabcentral/fileexchange/24409-hessian-based-frangi-vesselness-filter)）
-- コントラスト調整（cf. [imadjustn](https://jp.mathworks.com/help/images/ref/imadjustn.html)）
-- マスク処理
-- 最大輝度ピクセルを基準にした輝度の標準化
-- イメージのサイズ変更（cf. [imresize](https://jp.mathworks.com/help/images/ref/imresize.html)）
+- IMG import: データ形式の変換（img形式またはtiff形式を読み込み，NIfTI形式に変換）
+- Attenuation Correction: 減衰補正（cf. [Zhou et al., 2018](https://pubmed.ncbi.nlm.nih.gov/31065413/)）
+- Binarize: ボリュームデータの二値化（cf. [imbinarize](https://jp.mathworks.com/help/images/ref/imbinarize.html)）
+- Difference: ２つのボリュームデータの差分の算出（cf. [imsubtract](https://jp.mathworks.com/help/images/ref/imsubtract.html)）
+- Complement: イメージの補数．白黒反転（cf. [imcomplement](https://jp.mathworks.com/help/images/ref/imcomplement.html)）
+- Frangi Filter: Hessian行列にもとづく血管走行パタンの抽出（cf. [Dirk-Jan Kroon, 2021](https://jp.mathworks.com/matlabcentral/fileexchange/24409-hessian-based-frangi-vesselness-filter)）
+- Intensity Adjustment: コントラストの強調（cf. [imadjustn](https://jp.mathworks.com/help/images/ref/imadjustn.html)）
+- Mask: マスク処理
+- Normalize: 任意の区画における最大輝度が１になるように，各ピクセル値を区画における最大値で割って標準化
+- Resize: イメージのサイズ変更（cf. [imresize](https://jp.mathworks.com/help/images/ref/imresize.html)）
 
 # このプロジェクトが有益な理由
 脈絡膜血管を3次元再構築することにより，複雑な脈絡血管を立体的に観察することができます．また，血管3次元構造を反映した数理的解析を行えます．
@@ -158,11 +158,11 @@ Hessian行列にもとづく血管走行パタンの抽出（cf. [Dirk-Jan Kroon
 - FrangiC: Frangi vesselness constant which gives the threshold between eigenvalues of noise and vessel structure. A thumb rule is dividing the greyvalues of the vessels by 4 till 6
 - Prefix: 出力データを保存する際にファイル名に付加する接頭辞
 #### Intensity Adjustment
-コントラスト調整（cf. [imadjustn](https://jp.mathworks.com/help/images/ref/imadjustn.html)）
+コントラストの強調．ボリュームデータ全体で最小値が０，最大値が１になるように輝度を調整します．その際，出力イメージのコントラストが強調されるように，非線形の調整を行います．（詳しくは [imadjustn](https://jp.mathworks.com/help/images/ref/imadjustn.html)）
 - Input image file(s): NIfTI形式のボリュームデータを指定してください．複数選択可．
 - Output directory: 保存先ディレクトリ
-- range_in [low high]: V の値を範囲 [0, 1] の新しい値にマッピングします．lowより小さい値は０にマッピングし、highより大きい値は１にマッピングします．
-- range_out [low high]: low_in と high_in の間の値が low_out と high_out の間の値にマッピングされるように、V の値を J の新しい値にマッピングします。low_in より小さい値は low_out にクリップされ、high_in より大きい値は high_out にクリップされます。
+- range_in [low high]: ボリュームデータの値を範囲 [0, 1] の新しい値にマッピングします．lowより小さい値は０にマッピングし、highより大きい値は１にマッピングします．
+- range_out [low high]: low_in と high_in の間の値が low_out と high_out の間の値にマッピングされるように、ボリュームデータの値を出力の新しい値にマッピングします。low_in より小さい値は low_out にクリップされ、high_in より大きい値は high_out にクリップされます。
 - Prefix: 出力データを保存する際にファイル名に付加する接頭辞
 #### Mask
 マスク処理
@@ -171,7 +171,7 @@ Hessian行列にもとづく血管走行パタンの抽出（cf. [Dirk-Jan Kroon
 - Output directory: 保存先ディレクトリ
 - Prefix: 出力データを保存する際にファイル名に付加する接頭辞
 #### Normalize
-最大輝度ピクセルを基準にした輝度の標準化
+最大輝度ピクセルを基準にした輝度の標準化：参照領域の最大値が１になるように，参照領域の最大値で各ピクセル値を割って輝度を調整します．
 - Input image file(s): NIfTI形式のボリュームデータを指定してください．複数選択可．
 - Output directory: 保存先ディレクトリ
 - Norm Range [H]: 最大輝度ピクセルをみつける範囲（行方向）．
