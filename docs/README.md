@@ -221,8 +221,9 @@ NIfTI, TIFデータの情報を表示します
 このソフトウェアを使った研究を学術文献として発表する場合は以下の文献を引用していただけると大変うれしいです
 - Sekiryu, Tetsuju, Yukinori Sugano, Akira Ojima, Takafumi Mori, Minoru Furuta, Masahiro Okamoto, and Satoshi Eifuku. 2019. “Hybrid Three-Dimensional Visualization of Choroidal Vasculature Imaged by Swept-Source Optical Coherence Tomography.” Translational Vision Science & Technology 8 (5): 31.
 - Tsuji, Shingo, Tetsuju Sekiryu, Yukinori Sugano, Akira Ojima, Akihito Kasai, Masahiro Okamoto, and Satoshi Eifuku. 2020. “Semantic Segmentation of the Choroid in Swept Source Optical Coherence Tomography Images for Volumetrics.” Scientific Reports 10 (1): 1088.
-- DOI:
-	-v1.1.2: [![DOI](https://zenodo.org/badge/340243535.svg)](https://zenodo.org/badge/latestdoi/340243535)
+
+# DOI
+- v1.1.2: [![DOI](https://zenodo.org/badge/340243535.svg)](https://zenodo.org/badge/latestdoi/340243535)
 
 # このプロジェクトのメンテナンス者とコントリビューター
 このプロジェクトのソースコードは以下の者が作成しました．
